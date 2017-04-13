@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Passagens.DAO
 {
-    class ClienteDAO
+    public class ClienteDAO
     {
         private static List<Cliente> clientes = new List<Cliente>();
 

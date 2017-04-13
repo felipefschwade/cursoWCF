@@ -8,8 +8,8 @@ using System.Threading.Tasks;
 
 namespace Passagens.Entidades
 {
-    [DataContractFormat]
-    class Cliente
+    [DataContract]
+    public class Cliente
     {
         [DataMember]
         public string Cpf { get; set; }

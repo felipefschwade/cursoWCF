@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 namespace Passagens.Interfaces
 {
     [ServiceContract]
-    interface IClienteService
+    public interface IClienteService
     {
         [OperationContract]
         Cliente Buscar(string nome);

@@ -10,7 +10,7 @@ using Passagens.DAO;
 
 namespace Passagens.Services
 {
-    class ClienteService : IClienteService
+    public class ClienteService : IClienteService
     {
         public void Add(Cliente cliente)
         {
