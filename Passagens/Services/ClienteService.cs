@@ -12,10 +12,13 @@ namespace Passagens.Services
 {
     public class ClienteService : IClienteService
     {
-        public void Add(Cliente cliente)
+        public bool Add(string nome, string cpf)
         {
+            var cliente = new Cliente() { Nome = nome, Cpf = cpf };
             var dao = new ClienteDAO();
             dao.Add(cliente);
+
+            return true;
         }
         public Cliente Buscar(string nome)
         {
