@@ -8,6 +8,9 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hosting", "Hosting\Hosting.csproj", "{09F0168D-E7BA-449B-A996-B8D558DFDAAA}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsumindoServico", "ConsumindoServico\ConsumindoServico.csproj", "{4052AF50-5F70-4CFC-BD43-B8FF5B221FAB}"
+	ProjectSection(ProjectDependencies) = postProject
+		{D5FC9B36-5792-4478-AD50-6625F8BFCECC} = {D5FC9B36-5792-4478-AD50-6625F8BFCECC}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
