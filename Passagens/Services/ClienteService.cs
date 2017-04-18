@@ -25,5 +25,11 @@ namespace Passagens.Services
             var dao = new ClienteDAO();
             return dao.Buscar(nome);
         }
+
+        public IList<Cliente> listaTodos()
+        {
+            var dao = new ClienteDAO();
+            return dao.ListaTodos();
+        }
     }
 }

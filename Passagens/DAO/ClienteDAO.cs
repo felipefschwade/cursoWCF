@@ -21,5 +21,9 @@ namespace Passagens.DAO
             var resultado = ClienteDAO.clientes.Where(c => c.Nome.Equals(nome)).FirstOrDefault();
             return (Cliente)resultado;
         }
+        public IList<Cliente> ListaTodos()
+        {
+            return clientes;
+        }
     }
 }

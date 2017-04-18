@@ -13,10 +13,13 @@ namespace Passagens.Interfaces
     public interface IClienteService
     {
         [OperationContract]
-        [WebInvoke(Method = "GET", ResponseFormat = WebMessageFormat.Json, UriTemplate = "buscarCliente/{nome}")]
+        [WebInvoke(Method = "GET", ResponseFormat = WebMessageFormat.Xml, UriTemplate = "buscarCliente/{nome}")]
         Cliente Buscar(string nome);
         [OperationContract]
         [WebInvoke(Method = "GET", ResponseFormat = WebMessageFormat.Json, UriTemplate = "adicionarCliente/{nome};{cpf}")]
         bool Add(string nome, string cpf);
+        [OperationContract]
+        [WebInvoke(Method = "GET", ResponseFormat = WebMessageFormat.Json, UriTemplate = "listaClientes/")]
+        IList<Cliente> listaTodos();
     }
 }
